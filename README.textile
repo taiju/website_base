@@ -14,11 +14,11 @@ h2. 利用技術
 h2. 使い方
 
 # このリポジトリをクローンする。
-# <code>templates/layouts/</code> で基本レイアウトを作る。
+# <code>templates/layouts/*.html.ep</code> で基本レイアウトを作る。
 # <code>templates/*.html.ep</code> でHTMLテンプレートを作る。
 # <code>app</code>（Mojolicious lite_app） でルーティングする。
-# <code>_scss/</code> にあるscssファイルでスタイルを書く。
-# <code>_scss/style.scss</code> を sassを使って <code>public/style.css</code> に出力する。
+# <code>_scss/*.scss</code> にあるscssファイルでスタイルを書く。
+# <code>_scss/style.scss</code> を、sassを使って、 <code>public/style.css</code> に出力する。
 # スタイルはページごとに <code>_scss/_pagename.scss</code> に分け、 <code>_scss/style.scss</code> でインポートする。
-# <code>_expand_js/</code> にあるJSファイルでスクリプトを書く。
-# <code>_expand_js/site.js</code> を yuicompressorを使って <code>public/js/site.min.js</code> に出力する。
+# <code>_expand_js/*.js</code> にあるJSファイルでスクリプトを書く。
+# <code>_expand_js/*.js</code> を、yuicompressorを使って、 <code>public/js/*.min.js</code> に出力する。
