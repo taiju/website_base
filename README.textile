@@ -22,3 +22,12 @@ h2. 使い方
 # スタイルはページごとに <code>_scss/_pagename.scss</code> に分け、 <code>_scss/style.scss</code> でインポートする。
 # <code>_expand_js/*.js</code> にあるJSファイルでスクリプトを書く。
 # <code>_expand_js/*.js</code> を、yuicompressorを使って、 <code>public/js/*.min.js</code> に出力する。
+# <code>./app daemon --reload</code> でサーバーを起動して確認
+
+h2. 静的ファイルに出力するには
+
+以下の手順で。
+
+# <code>mkdir static</code>
+# <code>cd static</code>
+# <code>wget -r localhost:3000 -nH</code>
