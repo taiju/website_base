@@ -1,0 +1,23 @@
+h1. README
+
+h1. これは何？
+
+Webサイト制作の基本セットを管理しているリポジトリ。
+
+h2. 利用技術
+
+* git
+* sass
+* yuicompressor
+* Mojolicious::Lite
+
+h2. 使い方
+
+# このリポジトリをクローンする
+# templates/layouts/ で基本レイアウトを作る
+# templates/*.html.ep でHTMLテンプレートを作る
+# app でルーティングする
+# _scss/ にあるscssファイルでスタイルを書く
+# _scss/style.scss を sassを使って public/style.css に出力する
+# _expand_js/ にあるJSファイルでスクリプトを書く
+# _expand_js/site.js を yuicompressorを使って public/js/site.min.js に出力する
